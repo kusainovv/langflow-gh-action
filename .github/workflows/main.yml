@@ -31,5 +31,5 @@ jobs:
 
       - name: Build and Push Frontend Image
         run: |
-          docker build -t ghcr.io/${{ github.actor }}/langflow-frontend:latest -f src/frontend/Dockerfile src/
+          docker build -t ghcr.io/${{ github.actor }}/langflow-frontend:latest -f src/frontend/Dockerfile src/frontend
           docker push ghcr.io/${{ github.actor }}/langflow-frontend:latest
